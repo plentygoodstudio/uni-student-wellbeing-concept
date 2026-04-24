@@ -106,3 +106,11 @@ Total: 28 lessons, ~5.5 hours. Rounded to "~6 hours" in UI copy.
 - `≤ 600px`: Related modules 1-col; hero actions stack; cards reduce padding.
 
 Content licensed under [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
+---
+
+## Live preview
+
+- **GitHub:** https://github.com/plentygoodstudio/uni-student-wellbeing-concept
+- **Vercel (production):** https://uni-student-wellbeing.vercel.app
+- Auto-deploys on push to main.
