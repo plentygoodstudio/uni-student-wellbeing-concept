@@ -1,0 +1,7 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Venn diagram: two overlapping circles -->
+  <circle cx="24" cy="32" r="16"/>
+  <circle cx="40" cy="32" r="16"/>
+  <!-- Node at intersection -->
+  <circle cx="32" cy="32" r="3.5" fill="currentColor" stroke="none"/>
+</svg>

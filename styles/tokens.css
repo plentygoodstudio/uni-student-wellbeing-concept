@@ -1,0 +1,88 @@
+/* =============================================================
+   tokens.css — Design system foundation
+   All values live here. Nothing in components.css uses raw hex.
+   ============================================================= */
+
+:root {
+
+  /* ── Palette ─────────────────────────────────────────── */
+  --color-bg:                #FFFFFF;
+  --color-bg-soft:           #F8F9FC;   /* cool neutral surface */
+  --color-bg-tinted:         #E8F3F1;   /* primary-tinted surface */
+  --color-surface-dark:      #0B1F1E;   /* dark sections, footer */
+  --color-ink:               #111827;
+  --color-ink-muted:         #4B5563;
+  --color-ink-soft:          #9CA3AF;
+  --color-primary:           #0F766E;   /* deep teal */
+  --color-primary-container: #B2DFDB;   /* light teal tint */
+  --color-primary-hover:     #0B5B55;
+  --color-on-primary:        #FFFFFF;
+  --color-accent:            #FFB020;   /* warm amber */
+  --color-accent-container:  #FFF4D6;
+  --color-success:           #16A34A;
+  --color-rule:              rgba(17, 24, 39, 0.08);
+
+  /* Named tint palette — 5 distinct surface tones */
+  --color-tint-1: #E8F3F1;  /* soft teal (= --color-bg-tinted) */
+  --color-tint-2: #FFF4D6;  /* warm amber (= --color-accent-container) */
+  --color-tint-3: #EEF2FF;  /* cool pale indigo */
+  --color-tint-4: #FEF3E2;  /* warm cream */
+  --color-tint-5: #E8F0EC;  /* cool pale sage */
+
+  /* Module tinted surfaces — cycle across cards */
+  --color-module-1: var(--color-tint-1);
+  --color-module-2: var(--color-tint-2);
+  --color-module-3: var(--color-tint-3);
+  --color-module-4: var(--color-tint-4);
+  --color-module-5: var(--color-tint-5);
+
+  /* Semantic aliases */
+  --color-footer-bg:   var(--color-surface-dark);
+  --color-footer-text: var(--color-on-primary);
+
+  /* ── Typography — Inter variable only ───────────────── */
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --text-display-lg:  3.5rem;     /* 56px, lh 1.143, ls -0.02em, w 600 */
+  --text-display-md:  2.75rem;    /* 44px, lh 1.182, ls -0.02em, w 600 */
+  --text-headline-lg: 2rem;       /* 32px, lh 1.25,  ls -0.01em, w 600 */
+  --text-headline-md: 1.625rem;   /* 26px, lh 1.231, ls -0.01em, w 600 */
+  --text-title:       1.25rem;    /* 20px, lh 1.4,   ls  0,       w 600 */
+  --text-body-lg:     1.125rem;   /* 18px, lh 1.556, ls  0,       w 400 */
+  --text-body:        1rem;       /* 16px, lh 1.5,   ls  0,       w 400 */
+  --text-label:       0.875rem;   /* 14px, lh 1.429, ls  0.01em,  w 500 */
+  --text-overline:    0.75rem;    /* 12px, lh 1.333, ls  0.08em,  w 600, uppercase */
+
+  /* ── Spacing (8pt base) ──────────────────────────────── */
+  --space-1:  0.25rem;   /*   4px */
+  --space-2:  0.5rem;    /*   8px */
+  --space-3:  0.75rem;   /*  12px */
+  --space-4:  1rem;      /*  16px */
+  --space-5:  1.5rem;    /*  24px */
+  --space-6:  2rem;      /*  32px */
+  --space-8:  3rem;      /*  48px */
+  --space-10: 4rem;      /*  64px */
+  --space-12: 6rem;      /*  96px */
+  --space-16: 8rem;      /* 128px */
+
+  /* ── Shape ───────────────────────────────────────────── */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-pill: 999px;
+
+  /* ── Elevation ───────────────────────────────────────── */
+  --elev-0: none;
+  --elev-1: 0 1px 3px rgba(17, 24, 39, 0.06);
+  --elev-2: 0 4px 12px rgba(17, 24, 39, 0.08);
+
+  /* ── Motion ──────────────────────────────────────────── */
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+
+  /* ── Layout ──────────────────────────────────────────── */
+  --container-max:     1200px;
+  --container-padding: 2rem;
+}

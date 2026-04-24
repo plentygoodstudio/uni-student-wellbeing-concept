@@ -1,0 +1,7 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Speech bubble body -->
+  <path d="M8 10 Q8 8 10 8 H54 Q56 8 56 10 V36 Q56 38 54 38 H28 L18 56 L22 38 H10 Q8 38 8 36 V10 Z"/>
+  <!-- Forward arrow inside bubble -->
+  <path d="M20 23 H44"/>
+  <path d="M36 16 L44 23 L36 30"/>
+</svg>
