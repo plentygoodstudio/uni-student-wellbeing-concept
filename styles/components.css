@@ -763,11 +763,12 @@ a.module-card:hover .module-card-symbol,
 /* ── Research update card ────────────────────────────────── */
 
 .update-card {
+  width: 100%;
   background-color: var(--color-card);
   border: 1px solid var(--color-rule);
   border-radius: var(--radius-lg);
   box-shadow: var(--elev-1);
-  padding: var(--card-p-default);
+  padding: 32px;
   display: flex;
   flex-direction: column;
   gap: var(--stack-sm);
@@ -1332,13 +1333,15 @@ a.update-card:hover .link-arrow .arrow {
 }
 
 .team-card {
+  width: 100%;
   display: flex;
-  gap: var(--stack-sm);
+  gap: var(--stack-md);
   align-items: flex-start;
-  padding: var(--card-p-compact);
-  background-color: var(--color-bg);
+  padding: 32px;
+  background-color: var(--color-card);
   border: 1px solid var(--color-rule);
   border-radius: var(--radius-lg);
+  box-shadow: var(--elev-1);
   align-self: stretch;
 }
 
@@ -1385,41 +1388,63 @@ a.update-card:hover .link-arrow .arrow {
 
 /* ── Publication cards ──────────────────────────────────── */
 
-.publications-list {
+.publications-grid {
   display: grid;
-  gap: var(--space-4);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  align-items: stretch;
 }
 
 .publication-card {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: var(--stack-md);
-  align-items: start;
-  padding: var(--card-p-compact);
-  background-color: var(--color-bg-soft);
-  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 32px;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--elev-1);
+  transition: transform var(--duration-base) var(--ease-out),
+              box-shadow var(--duration-base) var(--ease-out),
+              border-color var(--duration-base) var(--ease-out);
 }
 
-.publication-year {
-  font-size: var(--text-overline);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-ink-soft);
-  padding-top: 0.15em;
-  white-space: nowrap;
+.publication-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elev-2);
+  border-color: var(--color-rule-hover);
 }
 
-.publication-title {
-  font-size: var(--text-body);
+.publication-card-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.publication-card-title {
+  font-size: var(--text-headline-md);
   font-weight: 600;
+  letter-spacing: -0.01em;
   color: var(--color-ink);
-  margin-bottom: var(--space-1);
+  line-height: 1.3;
+  margin-bottom: 12px;
 }
 
-.publication-authors {
-  font-size: var(--text-label);
+.publication-card-cite {
+  font-size: var(--text-meta);
   color: var(--color-ink-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.publication-card-cta {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .publications-grid { grid-template-columns: 1fr; gap: 20px; }
 }
 
 
@@ -1592,15 +1617,15 @@ a.update-card:hover .link-arrow .arrow {
   grid-template-columns: 2.5rem 1fr auto;
   gap: var(--space-4);
   align-items: center;
-  padding: var(--space-5) var(--space-4);
+  padding: 16px 0;
   border-bottom: 1px solid var(--color-rule);
   border-radius: 0;
   text-decoration: none;
   transition: background-color var(--duration-fast) var(--ease-emphasized);
 }
 
-.contents-row:hover {
-  background-color: var(--color-bg-soft);
+.contents-row:hover .contents-title {
+  color: var(--color-primary);
 }
 
 .contents-index {
@@ -1708,27 +1733,37 @@ a.update-card:hover .link-arrow .arrow {
 .related-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-4);
+  gap: 24px;
 }
 
 .related-card {
-  padding: var(--card-p-default);
+  width: 100%;
+  padding: 32px;
+  background-color: var(--color-card);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-rule);
   box-shadow: var(--elev-1);
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  transition: transform var(--duration-base) var(--ease-emphasized),
-              box-shadow var(--duration-base) var(--ease-emphasized),
-              background-color var(--duration-fast) var(--ease-emphasized);
+  gap: 12px;
+  transition: transform var(--duration-base) var(--ease-out),
+              box-shadow var(--duration-base) var(--ease-out),
+              border-color var(--duration-base) var(--ease-out);
 }
 
-.related-card:hover {
+.related-card svg {
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+a.related-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--elev-2);
-  background-color: var(--color-bg-soft);
+  border-color: var(--color-rule-hover);
 }
 
 .related-card-number {
@@ -1736,11 +1771,11 @@ a.update-card:hover .link-arrow .arrow {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-ink-soft);
 }
 
 .related-card-title {
-  font-size: var(--text-body);
+  font-size: var(--text-title);
   font-weight: 600;
   color: var(--color-ink);
   line-height: 1.3;

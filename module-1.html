@@ -10,6 +10,22 @@
   <link rel="stylesheet" href="styles/tokens.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/components.css">
+  <style>
+    /* Module-1 section rhythm */
+    main > .hero { padding-block: 96px; }
+    main > section.section--sm.section--soft { padding-block: 96px; }   /* video */
+    main > section.section[aria-labelledby="contents-heading"] { padding-block: 96px; }
+    main > section.section--dark[aria-labelledby="voices-heading"] { padding-block: 128px; }
+    main > section.section[aria-labelledby="related-heading"] { padding-block: 96px 64px; }
+
+    @media (max-width: 768px) {
+      main > .hero,
+      main > section.section--sm.section--soft,
+      main > section.section[aria-labelledby="contents-heading"],
+      main > section.section[aria-labelledby="related-heading"] { padding-block: 64px; }
+      main > section.section--dark[aria-labelledby="voices-heading"] { padding-block: 80px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -54,13 +70,11 @@
         <p class="hero-lead">
           Why are so many students experiencing poor mental health? This module examines the evidence on psychological distress in Australian universities, introduces frameworks for understanding what shapes student wellbeing, and gives educators practical strategies to act on what they learn.
         </p>
-        <div class="hero-actions">
-          <div class="chip-row">
-            <span class="chip chip-primary">~75 min</span>
-            <span class="chip chip-soft">6 lessons</span>
-            <span class="chip chip-soft">Includes video</span>
-            <span class="chip chip-soft">Quiz included</span>
-          </div>
+        <div class="chip-row" style="gap: 8px;">
+          <span class="chip chip--tinted">~75 min</span>
+          <span class="chip chip--solid">6 lessons</span>
+          <span class="chip chip--outline">Includes video</span>
+          <span class="chip chip--outline">Quiz included</span>
         </div>
       </div>
 
@@ -108,8 +122,8 @@
   <!-- ── Module contents ───────────────────────────────── -->
   <section class="section" aria-labelledby="contents-heading">
     <div class="container">
-      <header class="section-header" style="margin-bottom: var(--space-6);">
-        <h2 id="contents-heading">Module contents</h2>
+      <header class="section-header" style="margin-bottom: 48px;">
+        <h2 id="contents-heading" style="margin-bottom: 12px;">Module contents</h2>
         <p class="lead">Work through the lessons in order, or jump to a topic. Each lesson takes 10–15 minutes.</p>
       </header>
 
@@ -251,8 +265,8 @@
       <nav aria-label="Other modules in this program">
         <ul class="related-grid" role="list">
           <li>
-            <div class="related-card" style="opacity: 0.6; cursor: default;">
-              <svg width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true" style="color: var(--color-primary); flex-shrink: 0;">
+            <div class="related-card" style="opacity: 0.85; cursor: default;">
+              <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
                 <circle cx="16" cy="16" r="3" fill="currentColor"/>
                 <circle cx="32" cy="16" r="3" fill="currentColor"/>
                 <circle cx="48" cy="16" r="3" fill="currentColor"/>
@@ -270,8 +284,8 @@
             </div>
           </li>
           <li>
-            <div class="related-card" style="opacity: 0.6; cursor: default;">
-              <svg width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-primary); flex-shrink: 0;">
+            <div class="related-card" style="opacity: 0.85; cursor: default;">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M8 10 Q8 8 10 8 H54 Q56 8 56 10 V36 Q56 38 54 38 H28 L18 56 L22 38 H10 Q8 38 8 36 V10 Z"/>
                 <path d="M20 23 H44"/>
                 <path d="M36 16 L44 23 L36 30"/>
@@ -282,8 +296,8 @@
             </div>
           </li>
           <li>
-            <div class="related-card" style="opacity: 0.6; cursor: default;">
-              <svg width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-primary); flex-shrink: 0;">
+            <div class="related-card" style="opacity: 0.85; cursor: default;">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <circle cx="24" cy="32" r="16"/>
                 <circle cx="40" cy="32" r="16"/>
                 <circle cx="32" cy="32" r="3.5" fill="currentColor" stroke="none"/>
@@ -294,8 +308,8 @@
             </div>
           </li>
           <li>
-            <div class="related-card" style="opacity: 0.6; cursor: default;">
-              <svg width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-primary); flex-shrink: 0;">
+            <div class="related-card" style="opacity: 0.85; cursor: default;">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="10" y="10" width="44" height="44" rx="10"/>
                 <line x1="32" y1="18" x2="32" y2="46"/>
                 <line x1="18" y1="32" x2="46" y2="32"/>
@@ -308,30 +322,6 @@
           </li>
         </ul>
       </nav>
-    </div>
-  </section>
-
-  <!-- ── Closing CTA (full-bleed tinted) ──────────────── -->
-  <section class="cta-section" aria-labelledby="m1-cta-heading">
-    <div class="container">
-      <div class="cta-section-grid">
-        <div class="cta-section-text">
-          <span class="cta-overline">Continue learning</span>
-          <h2 id="m1-cta-heading" class="cta-heading">Once you&rsquo;ve finished Module 1.</h2>
-          <p class="cta-body">Module 2 covers curriculum design, including good practice principles and discipline-based case studies. Or skip ahead to whatever you need.</p>
-        </div>
-        <div class="cta-section-actions">
-          <div class="cta-section-buttons">
-            <a href="learning.html" class="btn btn-primary btn--lg">Browse all modules</a>
-            <a href="research-project.html" class="btn btn-outlined btn--lg">About the research</a>
-          </div>
-          <div class="cta-section-symbol" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="32" cy="21" r="11"/><circle cx="43" cy="32" r="11"/><circle cx="32" cy="43" r="11"/><circle cx="21" cy="32" r="11"/>
-            </svg>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
