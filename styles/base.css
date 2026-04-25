@@ -162,6 +162,11 @@ h1, h2, h3, h4,
   padding-block: var(--section-y-sm);
 }
 
+/* When a section follows a hero, collapse its top padding so the
+   combined hero-bottom + section-top gap reads as ~96px on desktop. */
+.hero + .section          { padding-top: 32px; }
+.hero + .section--sm      { padding-top: 0; }
+
 .section--dark {
   background-color: var(--color-surface-dark);
   color: var(--color-on-dark);
@@ -331,10 +336,10 @@ h1, h2, h3, h4,
 /* Mobile (≤768px) */
 @media (max-width: 768px) {
   :root {
-    --section-y:    var(--section-y-mobile);  /* 80px */
-    --section-y-sm: 3rem;   /* 48px */
-    --section-y-md: 4rem;   /* 64px */
-    --section-y-lg: 5rem;   /* 80px */
+    --section-y:    var(--section-y-mobile);  /* 64px */
+    --section-y-sm: 2.5rem;  /* 40px */
+    --section-y-md: 4rem;    /* 64px */
+    --section-y-lg: 4.5rem;  /* 72px */
   }
   .text-display-lg {
     font-size: 2.5rem;       /* 40px */
@@ -355,8 +360,8 @@ h1, h2, h3, h4,
   :root {
     --container-px-desktop: var(--container-px-mobile);  /* 20px */
     --container-padding:    var(--container-px-mobile);
-    --section-y-sm: 2.5rem;  /* 40px */
-    --section-y-md: 3.5rem;  /* 56px */
+    --section-y-sm: 2rem;    /* 32px */
+    --section-y-md: 3rem;    /* 48px */
   }
   .text-display-lg {
     font-size: 2rem;

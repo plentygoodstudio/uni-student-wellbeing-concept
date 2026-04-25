@@ -388,7 +388,7 @@ a.card:hover,
 /* ── Section header ─────────────────────────────────────── */
 
 .section-header {
-  margin-bottom: var(--space-8);
+  margin-bottom: 32px;            /* heading → first content row */
 }
 
 .section-header h2 {
@@ -396,7 +396,11 @@ a.card:hover,
   line-height: 1.25;
   letter-spacing: -0.01em;
   font-weight: 600;
-  margin-bottom: var(--space-3);
+  margin-bottom: 16px;            /* heading → lead */
+}
+
+.section-header .overline {
+  margin-bottom: 12px;
 }
 
 .section-header .lead {
@@ -410,7 +414,7 @@ a.card:hover,
 
 .hero {
   position: relative;
-  padding-block: var(--section-y-md) var(--section-y-lg);
+  padding-block: var(--section-y-md) var(--section-y-lg);  /* 96 / 112 */
   background-color: var(--color-bg);
 }
 
@@ -464,7 +468,7 @@ a.card:hover,
 }
 
 .hero--sm {
-  padding-block: var(--section-y-sm);
+  padding-block: var(--section-y-lg) var(--section-y-sm);   /* 112 / 64 */
 }
 
 

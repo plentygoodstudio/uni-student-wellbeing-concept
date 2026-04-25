@@ -74,9 +74,9 @@
   --space-16: 8rem;      /* 128px */
 
   /* ── Section vertical rhythm ─────────────────────────── */
-  --section-y-sm: 4rem;     /*  64px — tight sections          */
-  --section-y-md: 6rem;     /*  96px — default sections        */
-  --section-y-lg: 8rem;     /* 128px — hero-to-content only    */
+  --section-y-sm: 4rem;     /*  64px — tight / low-density sections */
+  --section-y-md: 6rem;     /*  96px — default sections             */
+  --section-y-lg: 7rem;     /* 112px — hero presence                */
 
   /* ── Component stacking ──────────────────────────────── */
   --stack-xs: 0.5rem;       /*  8px */
@@ -122,6 +122,6 @@
   --grid-gutter-mobile: 1.25rem;   /* 20px */
 
   /* ── Section rhythm (canonical) ──────────────────────── */
-  --section-y:          8rem;       /* 128px — full sections */
-  --section-y-mobile:   5rem;       /* 80px */
+  --section-y:          6rem;       /* 96px — default sections */
+  --section-y-mobile:   4rem;       /* 64px */
 }

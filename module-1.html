@@ -12,18 +12,18 @@
   <link rel="stylesheet" href="styles/components.css">
   <style>
     /* Module-1 section rhythm */
-    main > .hero { padding-block: 96px; }
-    main > section.section--sm.section--soft { padding-block: 96px; }   /* video */
-    main > section.section[aria-labelledby="contents-heading"] { padding-block: 96px; }
-    main > section.section--dark[aria-labelledby="voices-heading"] { padding-block: 128px; }
-    main > section.section[aria-labelledby="related-heading"] { padding-block: 96px 64px; }
+    main > .hero { padding-block: var(--section-y-lg) var(--section-y-sm); }   /* 112 / 64 */
+    main > section.section--sm.section--soft { padding-block: var(--section-y); }       /* 96 (video → contents) */
+    main > section.section[aria-labelledby="contents-heading"] { padding-block: var(--section-y); }
+    main > section.section--dark[aria-labelledby="voices-heading"] { padding-block: var(--section-y); }
+    main > section.section[aria-labelledby="related-heading"] { padding-block: var(--section-y-sm); }
 
     @media (max-width: 768px) {
-      main > .hero,
+      main > .hero { padding-block: var(--section-y-md) var(--section-y-sm); }
       main > section.section--sm.section--soft,
       main > section.section[aria-labelledby="contents-heading"],
-      main > section.section[aria-labelledby="related-heading"] { padding-block: 64px; }
-      main > section.section--dark[aria-labelledby="voices-heading"] { padding-block: 80px; }
+      main > section.section--dark[aria-labelledby="voices-heading"] { padding-block: var(--section-y-mobile); }
+      main > section.section[aria-labelledby="related-heading"] { padding-block: var(--section-y-sm); }
     }
   </style>
 </head>
