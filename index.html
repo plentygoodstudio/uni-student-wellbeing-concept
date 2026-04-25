@@ -35,9 +35,9 @@
 
   <!-- ── Hero ──────────────────────────────────────────── -->
   <section class="hero" aria-labelledby="hero-heading">
-    <div class="container hero-grid">
+    <div class="container grid hero-grid">
 
-      <div class="hero-left">
+      <div class="hero-left col-4">
         <span class="hero-overline">For University Educators &amp; Researchers</span>
         <h1 id="hero-heading" class="text-display-lg">
           Research and learning that helps students thrive at university.
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div class="hero-right" aria-hidden="true">
+      <div class="hero-right col-2" aria-hidden="true">
         <div class="module-symbol-cluster">
           <div class="symbol-tile" style="background-color: var(--color-primary-container);">
             <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -82,7 +82,7 @@
             </svg>
             Difficult Conversations
           </div>
-          <div class="symbol-tile symbol-tile--wide" style="background-color: var(--color-bg-soft);">
+          <div class="symbol-tile" style="background-color: var(--color-bg-soft);">
             <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="10" y="10" width="44" height="44" rx="10"/>
               <line x1="32" y1="18" x2="32" y2="46"/><line x1="18" y1="32" x2="46" y2="32"/>
@@ -90,12 +90,9 @@
             </svg>
             Your Wellbeing
           </div>
-          <div style="grid-column: 1/-1; display: flex; align-items: center; justify-content: center; gap: var(--stack-md); padding: var(--stack-sm) 0; color: var(--color-ink-soft); font-size: var(--text-label); font-weight: 500;">
-            <span>5 modules</span>
-            <span style="width:1px; height:12px; background:var(--color-rule);"></span>
-            <span>~6 hours total</span>
-            <span style="width:1px; height:12px; background:var(--color-rule);"></span>
-            <span>Free to access</span>
+          <div class="symbol-stat-tile">
+            <span class="symbol-stat-count">5</span>
+            <span class="symbol-stat-label">modules · ~6 h · free</span>
           </div>
         </div>
       </div>
@@ -103,8 +100,8 @@
     </div>
   </section>
 
-  <!-- ── Three-project router ──────────────────────────── -->
-  <section class="section section--sm" aria-labelledby="projects-heading">
+  <!-- ── Three connected programs ──────────────────────── -->
+  <section class="section" aria-labelledby="projects-heading">
     <div class="container">
       <header class="section-header">
         <h2 id="projects-heading" class="text-headline-md">Three connected programs, one mission.</h2>
@@ -129,7 +126,7 @@
             Events, seminars, and news connecting researchers, educators, and student wellbeing practitioners across Australia and beyond.
           </p>
           <div class="chip-row" style="margin-top: var(--space-2);">
-            <span class="chip chip-primary">Next event: 29 Apr</span>
+            <span class="chip chip-primary chip--sm">Next event: 29 Apr</span>
           </div>
           <a href="research-hub.html" class="btn btn-outlined btn--sm" style="align-self: flex-start; margin-top: var(--space-3);">See events &amp; news</a>
         </article>
@@ -160,89 +157,90 @@
   </section>
 
   <!-- ── Featured module ───────────────────────────────── -->
-  <section class="section section--sm" aria-labelledby="featured-heading">
+  <section class="section" aria-labelledby="featured-heading">
     <div class="container">
       <header class="section-header">
         <span class="overline">Start here</span>
         <h2 id="featured-heading">Featured module</h2>
       </header>
 
-      <article class="feature-module" aria-labelledby="fm-title">
-        <div class="feature-module-symbol" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="32" cy="21" r="11"/>
-            <circle cx="43" cy="32" r="11"/>
-            <circle cx="32" cy="43" r="11"/>
-            <circle cx="21" cy="32" r="11"/>
-          </svg>
-        </div>
-        <div class="feature-module-body">
-          <span class="feature-module-eyebrow">Module 01</span>
-          <h3 id="fm-title" class="feature-module-title">Student Wellbeing</h3>
-          <p class="feature-module-desc">
-            Why are so many students experiencing poor mental health? Experts answer questions about the high rates of student distress and the university's role in promoting wellbeing. The essential foundation for everything that follows.
-          </p>
-          <div class="feature-module-footer">
-            <a href="module-1.html" class="btn btn-primary">Start module</a>
-            <div class="chip-row">
-              <span class="chip chip-soft chip--sm">~75 min</span>
-              <span class="chip chip-soft chip--sm">6 lessons</span>
+      <div class="grid">
+        <article class="feature-module" aria-labelledby="fm-title">
+          <div class="feature-module-left">
+            <div class="feature-module-symbol" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="32" cy="21" r="11"/>
+                <circle cx="43" cy="32" r="11"/>
+                <circle cx="32" cy="43" r="11"/>
+                <circle cx="21" cy="32" r="11"/>
+              </svg>
+            </div>
+            <div class="feature-module-body">
+              <span class="feature-module-eyebrow">Module 01</span>
+              <h3 id="fm-title" class="feature-module-title">Student Wellbeing</h3>
+              <p class="feature-module-desc">
+                Why are so many students experiencing poor mental health? Experts answer questions about the high rates of student distress and the university's role in promoting wellbeing. The essential foundation for everything that follows.
+              </p>
+              <div class="feature-module-footer">
+                <a href="module-1.html" class="btn btn-primary">Start module</a>
+                <div class="chip-row">
+                  <span class="chip chip-soft chip--sm">~75 min</span>
+                  <span class="chip chip-soft chip--sm">6 lessons</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="feature-module-lessons" aria-hidden="true">
-          <span class="feature-module-lessons-heading">Lessons</span>
-          <ol class="feature-lesson-list">
-            <li class="feature-lesson-item"><span class="feature-lesson-num">1</span>Introduction</li>
-            <li class="feature-lesson-item"><span class="feature-lesson-num">2</span>Mental Health in Higher Education</li>
-            <li class="feature-lesson-item"><span class="feature-lesson-num">3</span>Student Life in the 21st Century</li>
-            <li class="feature-lesson-item"><span class="feature-lesson-num">4</span>Wellbeing Essentials</li>
-            <li class="feature-lesson-item"><span class="feature-lesson-num">5</span>Fostering Student Wellbeing</li>
-            <li class="feature-lesson-item"><span class="feature-lesson-num">6</span>Knowledge Check</li>
-          </ol>
-        </div>
-      </article>
+          <div class="feature-module-lessons" aria-hidden="true">
+            <span class="feature-module-lessons-heading">Lessons</span>
+            <ol class="feature-lesson-list">
+              <li class="feature-lesson-item"><span class="feature-lesson-num">1</span>Introduction</li>
+              <li class="feature-lesson-item"><span class="feature-lesson-num">2</span>Mental Health in Higher Education</li>
+              <li class="feature-lesson-item"><span class="feature-lesson-num">3</span>Student Life in the 21st Century</li>
+              <li class="feature-lesson-item"><span class="feature-lesson-num">4</span>Wellbeing Essentials</li>
+              <li class="feature-lesson-item"><span class="feature-lesson-num">5</span>Fostering Student Wellbeing</li>
+              <li class="feature-lesson-item"><span class="feature-lesson-num">6</span>Knowledge Check</li>
+            </ol>
+          </div>
+        </article>
+      </div>
+
     </div>
   </section>
 
   <!-- ── Latest research updates ──────────────────────── -->
-  <section class="section section--sm section--soft" aria-labelledby="update-heading">
+  <section class="section section--soft" aria-labelledby="update-heading">
     <div class="container">
       <header class="section-header">
         <span class="overline">Research Project</span>
         <h2 id="update-heading">Latest updates</h2>
       </header>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--stack-md); max-width: 900px;">
+      <div class="grid">
 
-        <a class="update-card" href="research-project.html" aria-labelledby="uc1-title">
-          <div style="display: flex; flex-direction: column; gap: var(--stack-xs);">
+        <a class="update-card col-3" href="research-project.html" aria-labelledby="uc1-title">
+          <div class="update-card-meta">
             <span class="update-card-date">Mar 2025</span>
             <div class="chip-row">
               <span class="chip chip-primary chip--sm">Research update</span>
               <span class="chip chip-soft chip--sm">~3 min</span>
             </div>
           </div>
-          <div>
-            <h3 id="uc1-title" class="update-card-title">2024 USW Survey fieldwork complete. Analysis underway.</h3>
-            <p class="update-card-excerpt">Data collection has concluded across five Australian universities. Analysis of student belonging, perceived educational value, and wellbeing trajectories is underway.</p>
-            <span class="text-link">Read update →</span>
-          </div>
+          <h3 id="uc1-title" class="update-card-title">2024 USW Survey fieldwork complete. Analysis underway.</h3>
+          <p class="update-card-excerpt">Data collection has concluded across five Australian universities. Analysis of student belonging, perceived educational value, and wellbeing trajectories is underway.</p>
+          <span class="text-link">Read update →</span>
         </a>
 
-        <a class="update-card" href="research-hub.html" aria-labelledby="uc2-title">
-          <div style="display: flex; flex-direction: column; gap: var(--stack-xs);">
+        <a class="update-card col-3" href="research-hub.html" aria-labelledby="uc2-title">
+          <div class="update-card-meta">
             <span class="update-card-date">Feb 2025</span>
             <div class="chip-row">
               <span class="chip chip-soft chip--sm">Resource</span>
               <span class="chip chip-soft chip--sm">~2 min</span>
             </div>
           </div>
-          <div>
-            <h3 id="uc2-title" class="update-card-title">Facilitator guide for learning modules now available.</h3>
-            <p class="update-card-excerpt">A supplementary reading list and facilitator guide for educators using the USW modules in professional development programs is now available to download.</p>
-            <span class="text-link">View learning modules →</span>
-          </div>
+          <h3 id="uc2-title" class="update-card-title">Facilitator guide for learning modules now available.</h3>
+          <p class="update-card-excerpt">A supplementary reading list and facilitator guide for educators using the USW modules in professional development programs is now available to download.</p>
+          <span class="text-link">View learning modules →</span>
         </a>
 
       </div>
@@ -254,13 +252,11 @@
   </section>
 
   <!-- ── Credibility strip ──────────────────────────────── -->
-  <section class="section section--sm section--dark" aria-label="Institutional affiliations">
+  <section class="section section--dark" aria-label="Institutional affiliations">
     <div class="container">
       <div class="credibility-inner">
         <p class="credibility-text">Based at the <strong>University of Melbourne</strong>, Centre for the Study of Higher Education</p>
-        <div class="credibility-sep" aria-hidden="true"></div>
         <p class="credibility-text">Funded by the <strong>Australian Research Council</strong></p>
-        <div class="credibility-sep" aria-hidden="true"></div>
         <p class="credibility-text">Led by <strong>Professor Chi Baik</strong></p>
       </div>
     </div>
@@ -311,5 +307,17 @@
 </footer>
 
 <script src="scripts/nav.js"></script>
+<script>
+  (function () {
+    var btn = document.createElement('button');
+    btn.id = 'debug-toggle';
+    btn.textContent = '?';
+    btn.title = 'Toggle grid debug overlay';
+    btn.addEventListener('click', function () {
+      document.body.classList.toggle('debug-grid');
+    });
+    document.body.appendChild(btn);
+  })();
+</script>
 </body>
 </html>

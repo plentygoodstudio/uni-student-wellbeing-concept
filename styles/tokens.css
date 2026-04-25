@@ -109,4 +109,14 @@
   --container-px-desktop: 2rem;      /* 32px */
   --container-px-mobile:  1.25rem;   /* 20px */
   --container-padding:    var(--container-px-desktop);  /* backward-compat alias */
+  --container-px:         2rem;      /* 32px — canonical alias */
+
+  /* ── Grid system ─────────────────────────────────────── */
+  --grid-columns:       6;
+  --grid-gutter:        2rem;       /* 32px */
+  --grid-gutter-mobile: 1.25rem;   /* 20px */
+
+  /* ── Section rhythm (canonical) ──────────────────────── */
+  --section-y:          8rem;       /* 128px — full sections */
+  --section-y-mobile:   5rem;       /* 80px */
 }
