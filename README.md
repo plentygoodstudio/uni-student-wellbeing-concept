@@ -46,6 +46,20 @@ The following are illustrative placeholders and must be replaced with real conte
 | ARC grant number | `research-project.html` | DP230100432 — verify |
 | Latest update card | `index.html` | Illustrative |
 | Hero stats: "20+ universities", "10 yrs research" | `learning.html` | Plausible figures based on project history; verify before launch |
+| Project admin email `usw-admin@unimelb.edu.au` | `contact.html` | Placeholder — replace with the real shared mailbox |
+| FAQ answers (6 items) | `contact.html` | Drafted from likely positions; review with the team before launch |
+| Researcher cards: Sarah Mitchell, Wei Chen, Tom Bradley, Priya Sharma | `about.html` | Placeholder names + roles — replace with real team members |
+| Institutional partners: University of Sydney, Monash University | `about.html` | Placeholder — confirm partnership status |
+| Events 4 & 5: 12 Sep, 8 Oct | `research-hub.html` | Placeholder dates and titles |
+| Hub stats: 24 events, 1,400+ practitioners, 12 universities, 8 collaborations | `research-hub.html` | Placeholder figures — replace with real Hub metrics |
+| News items 5 & 6 (Aug 2024 partner network, Jul 2024 belonging milestone) | `research-hub.html` | Placeholder copy |
+
+### How to replace placeholders
+
+When real content arrives:
+1. Find the row above and the file path it points to.
+2. Replace the placeholder copy/figure in place — markup is already structured for the final shape.
+3. Delete the README row once the placeholder is replaced. Anything still in this table is still placeholder.
 
 ---
 
