@@ -45,6 +45,7 @@ The following are illustrative placeholders and must be replaced with real conte
 | Module reading times | `learning.html`, `module-1.html` | Estimated at ~16 min/lesson; measure against real content |
 | ARC grant number | `research-project.html` | DP230100432 — verify |
 | Latest update card | `index.html` | Illustrative |
+| Hero stats: "20+ universities", "10 yrs research" | `learning.html` | Plausible figures based on project history; verify before launch |
 
 ---
 
