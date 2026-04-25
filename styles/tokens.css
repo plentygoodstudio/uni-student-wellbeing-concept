@@ -24,7 +24,8 @@
   --color-accent-container:  #F2DFDE;
   --color-success:           #1A6B3A;
   --color-success-bg:        #D4EDDA;
-  --color-rule:              rgba(26, 29, 31, 0.10);
+  --color-rule:              rgba(26, 29, 31, 0.08);
+  --color-rule-hover:        rgba(26, 29, 31, 0.14);
   --color-rule-strong:       rgba(26, 29, 31, 0.16);
   --color-rule-on-dark:      rgba(255, 255, 255, 0.10);
 
@@ -103,6 +104,7 @@
 
   /* ── Motion ──────────────────────────────────────────── */
   --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
   --duration-fast: 150ms;
   --duration-base: 250ms;
 
