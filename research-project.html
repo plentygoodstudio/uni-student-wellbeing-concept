@@ -46,36 +46,36 @@
           An ARC Discovery Project running from 2023 to 2026 across five Australian universities. We're investigating the relationship between higher education conditions and student psychological wellbeing, and what institutions are positioned to change.
         </p>
         <div class="hero-actions">
-          <span class="chip chip-soft">2023–2026</span>
+          <a href="#questions" class="btn btn-outlined btn--lg">Research questions</a>
         </div>
       </div>
 
       <div class="hero-right" aria-hidden="true">
         <div class="timeline-bar">
+          <div class="timeline-bar-meta">
+            <span class="chip chip-soft chip--sm">ARC Discovery Project · DP230100432</span>
+          </div>
           <div class="timeline-bar-track-row">
-            <div class="timeline-bar-item">
+            <div class="timeline-bar-item" data-year="2023">
               <span class="timeline-bar-year">2023</span>
               <div class="timeline-bar-dot"></div>
               <span class="timeline-bar-label">Project launch</span>
             </div>
-            <div class="timeline-bar-item">
+            <div class="timeline-bar-item" data-year="2024">
               <span class="timeline-bar-year">2024</span>
               <div class="timeline-bar-dot"></div>
               <span class="timeline-bar-label">Fieldwork</span>
             </div>
-            <div class="timeline-bar-item timeline-bar-item--current">
+            <div class="timeline-bar-item" data-year="2025">
               <span class="timeline-bar-year">2025</span>
               <div class="timeline-bar-dot"></div>
               <span class="timeline-bar-label">Analysis</span>
             </div>
-            <div class="timeline-bar-item">
+            <div class="timeline-bar-item" data-year="2026">
               <span class="timeline-bar-year">2026</span>
               <div class="timeline-bar-dot"></div>
               <span class="timeline-bar-label">Findings</span>
             </div>
-          </div>
-          <div class="timeline-bar-grant">
-            <span class="chip chip-accent chip--lg">ARC Discovery Project · DP230100432</span>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
   </section>
 
   <!-- ── Research questions ────────────────────────────── -->
-  <section class="section section--dark" aria-labelledby="questions-heading">
+  <section id="questions" class="section section--dark" aria-labelledby="questions-heading">
     <div class="container">
       <header class="section-header">
         <span class="overline">What we're investigating</span>
@@ -386,5 +386,13 @@
 </footer>
 
 <script src="scripts/nav.js"></script>
+<script>
+  (function () {
+    var year = String(new Date().getFullYear());
+    document.querySelectorAll('.timeline-bar-item[data-year]').forEach(function (el) {
+      el.classList.toggle('timeline-bar-item--current', el.dataset.year === year);
+    });
+  })();
+</script>
 </body>
 </html>

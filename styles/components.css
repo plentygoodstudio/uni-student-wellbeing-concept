@@ -2454,6 +2454,16 @@
   background-color: var(--color-bg-soft);
   border-radius: var(--radius-xl);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-sm);
+}
+
+/* Quiet meta label — sits above the track row */
+.timeline-bar-meta {
+  display: flex;
+  gap: var(--stack-sm);
+  flex-wrap: wrap;
 }
 
 .timeline-bar-track-row {
@@ -2461,17 +2471,18 @@
   grid-template-columns: repeat(4, 1fr);
   position: relative;
   padding-top: var(--stack-xs);
-  margin-bottom: var(--stack-md);
 }
 
+/* Connecting line: 1px rule-color, sits behind dots */
 .timeline-bar-track-row::before {
   content: '';
   position: absolute;
-  top: 28px;
+  /* top = padding-top(8) + year min-height(40) + gap(8) + inactive-dot-radius(5) */
+  top: calc(var(--stack-xs) + 2.5rem + var(--stack-xs) + 5px);
   left: 12%;
   right: 12%;
-  height: 2px;
-  background-color: var(--color-primary-container);
+  height: 1px;
+  background-color: var(--color-rule);
   z-index: 0;
 }
 
@@ -2485,20 +2496,24 @@
   z-index: 1;
 }
 
+/* Year: fixed min-height so all dots align regardless of font-size */
 .timeline-bar-year {
-  font-size: var(--text-headline-md);
-  font-weight: 700;
+  font-size: var(--text-headline-md);   /* 24px inactive */
+  font-weight: 500;
   color: var(--color-ink-soft);
   letter-spacing: -0.02em;
   line-height: 1;
+  min-height: 2.5rem;       /* 40px — keeps dots on the same horizontal */
+  display: flex;
+  align-items: flex-end;    /* text hugs the bottom, dots stay aligned */
 }
 
+/* Inactive dots: small, muted */
 .timeline-bar-dot {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: var(--color-primary-container);
-  border: 3px solid var(--color-bg-soft);
+  background-color: rgba(139, 144, 153, 0.30);   /* ink-soft at 30% */
   flex-shrink: 0;
 }
 
@@ -2510,23 +2525,19 @@
   max-width: 9ch;
 }
 
+/* Active year: charcoal, heavier, larger — no red */
 .timeline-bar-item--current .timeline-bar-year {
-  color: var(--color-accent);
+  font-size: var(--text-headline-lg);   /* 32px — visibly larger */
+  font-weight: 600;
+  color: var(--color-ink);
 }
 
+/* Active dot: the ONE accent-red moment + white separation ring */
 .timeline-bar-item--current .timeline-bar-dot {
+  width: 18px;
+  height: 18px;
   background-color: var(--color-accent);
-  width: 24px;
-  height: 24px;
-  border-width: 3px;
-}
-
-.timeline-bar-grant {
-  padding-top: var(--stack-md);
-  border-top: 1px solid rgba(10, 22, 40, 0.06);
-  display: flex;
-  gap: var(--stack-sm);
-  flex-wrap: wrap;
+  box-shadow: 0 0 0 2px var(--color-bg-soft);
 }
 
 
