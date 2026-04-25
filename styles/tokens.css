@@ -69,6 +69,23 @@
   --space-12: 6rem;      /*  96px */
   --space-16: 8rem;      /* 128px */
 
+  /* ── Section vertical rhythm ─────────────────────────── */
+  --section-y-sm: 4rem;     /*  64px — tight sections          */
+  --section-y-md: 6rem;     /*  96px — default sections        */
+  --section-y-lg: 8rem;     /* 128px — hero-to-content only    */
+
+  /* ── Component stacking ──────────────────────────────── */
+  --stack-xs: 0.5rem;       /*  8px */
+  --stack-sm: 1rem;         /* 16px */
+  --stack-md: 1.5rem;       /* 24px */
+  --stack-lg: 2rem;         /* 32px */
+  --stack-xl: 3rem;         /* 48px */
+
+  /* ── Card internal padding ───────────────────────────── */
+  --card-p-compact:  1.25rem;  /* 20px — inline meta, pull-quotes */
+  --card-p-default:  2rem;     /* 32px — standard cards           */
+  --card-p-spacious: 3rem;     /* 48px — featured / hero cards    */
+
   /* ── Shape ───────────────────────────────────────────── */
   --radius-sm:   4px;
   --radius-md:   8px;
@@ -87,6 +104,9 @@
   --duration-base: 250ms;
 
   /* ── Layout ──────────────────────────────────────────── */
-  --container-max:     1200px;
-  --container-padding: 2rem;
+  --container-max:        1200px;
+  --container-max-wide:   1360px;
+  --container-px-desktop: 2rem;      /* 32px */
+  --container-px-mobile:  1.25rem;   /* 20px */
+  --container-padding:    var(--container-px-desktop);  /* backward-compat alias */
 }

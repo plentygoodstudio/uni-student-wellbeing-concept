@@ -90,6 +90,13 @@
             </svg>
             Your Wellbeing
           </div>
+          <div style="grid-column: 1/-1; display: flex; align-items: center; justify-content: center; gap: var(--stack-md); padding: var(--stack-sm) 0; color: var(--color-ink-soft); font-size: var(--text-label); font-weight: 500;">
+            <span>5 modules</span>
+            <span style="width:1px; height:12px; background:var(--color-rule);"></span>
+            <span>~6 hours total</span>
+            <span style="width:1px; height:12px; background:var(--color-rule);"></span>
+            <span>Free to access</span>
+          </div>
         </div>
       </div>
 
@@ -137,11 +144,13 @@
             <div class="mini-module-row"><span class="mini-module-num">01</span>Student Wellbeing</div>
             <div class="mini-module-row"><span class="mini-module-num">02</span>Curriculum Design</div>
             <div class="mini-module-row"><span class="mini-module-num">03</span>Teaching Strategies</div>
+            <div class="mini-module-row"><span class="mini-module-num">04</span>Difficult Conversations</div>
+            <div class="mini-module-row"><span class="mini-module-num">05</span>Your Wellbeing</div>
           </div>
-          <div class="chip-row" style="margin-top: var(--space-4);">
-            <span class="chip chip-primary">5 modules</span>
-            <span class="chip chip-primary">~6 hours total</span>
-            <span class="chip chip-soft">Self-paced</span>
+          <div class="chip-row" style="margin-top: var(--stack-md);">
+            <span class="chip chip-primary chip--sm">5 modules</span>
+            <span class="chip chip-primary chip--sm">~6 hours total</span>
+            <span class="chip chip-soft chip--sm">Self-paced</span>
           </div>
           <a href="learning.html" class="btn btn-primary" style="align-self: flex-start; margin-top: var(--space-5);">Browse all modules</a>
         </article>
@@ -176,8 +185,8 @@
           <div class="feature-module-footer">
             <a href="module-1.html" class="btn btn-primary">Start module</a>
             <div class="chip-row">
-              <span class="chip chip-soft">~75 min</span>
-              <span class="chip chip-soft">6 lessons</span>
+              <span class="chip chip-soft chip--sm">~75 min</span>
+              <span class="chip chip-soft chip--sm">6 lessons</span>
             </div>
           </div>
         </div>
@@ -196,29 +205,49 @@
     </div>
   </section>
 
-  <!-- ── Latest research update ────────────────────────── -->
+  <!-- ── Latest research updates ──────────────────────── -->
   <section class="section section--sm section--soft" aria-labelledby="update-heading">
     <div class="container">
       <header class="section-header">
         <span class="overline">Research Project</span>
-        <h2 id="update-heading">Latest update</h2>
+        <h2 id="update-heading">Latest updates</h2>
       </header>
 
-      <a class="update-card" href="research-project.html" aria-labelledby="uc-title">
-        <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-          <span class="update-card-date">Mar 2025</span>
-          <div class="chip-row"><span class="chip chip-soft">~3 min read</span></div>
-        </div>
-        <div>
-          <h3 id="uc-title" class="update-card-title">2024 USW Survey fieldwork complete. Analysis underway.</h3>
-          <p class="update-card-excerpt">
-            Data collection for the 2024 Uni Student Wellbeing Survey has concluded across five Australian universities. The team is currently analysing findings on student belonging, perceived educational value, and wellbeing trajectories.
-          </p>
-          <span class="text-link">Read full update →</span>
-        </div>
-      </a>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--stack-md); max-width: 900px;">
 
-      <p style="margin-top: var(--space-5); font-size: var(--text-label); color: var(--color-ink-soft);">
+        <a class="update-card" href="research-project.html" aria-labelledby="uc1-title">
+          <div style="display: flex; flex-direction: column; gap: var(--stack-xs);">
+            <span class="update-card-date">Mar 2025</span>
+            <div class="chip-row">
+              <span class="chip chip-primary chip--sm">Research update</span>
+              <span class="chip chip-soft chip--sm">~3 min</span>
+            </div>
+          </div>
+          <div>
+            <h3 id="uc1-title" class="update-card-title">2024 USW Survey fieldwork complete. Analysis underway.</h3>
+            <p class="update-card-excerpt">Data collection has concluded across five Australian universities. Analysis of student belonging, perceived educational value, and wellbeing trajectories is underway.</p>
+            <span class="text-link">Read update →</span>
+          </div>
+        </a>
+
+        <a class="update-card" href="research-hub.html" aria-labelledby="uc2-title">
+          <div style="display: flex; flex-direction: column; gap: var(--stack-xs);">
+            <span class="update-card-date">Feb 2025</span>
+            <div class="chip-row">
+              <span class="chip chip-soft chip--sm">Resource</span>
+              <span class="chip chip-soft chip--sm">~2 min</span>
+            </div>
+          </div>
+          <div>
+            <h3 id="uc2-title" class="update-card-title">Facilitator guide for learning modules now available.</h3>
+            <p class="update-card-excerpt">A supplementary reading list and facilitator guide for educators using the USW modules in professional development programs is now available to download.</p>
+            <span class="text-link">View learning modules →</span>
+          </div>
+        </a>
+
+      </div>
+
+      <p style="margin-top: var(--stack-lg); font-size: var(--text-label); color: var(--color-ink-soft);">
         <a href="research-hub.html" class="text-link">View all updates on the Research Hub →</a>
       </p>
     </div>
