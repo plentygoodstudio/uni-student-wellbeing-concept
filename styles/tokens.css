@@ -6,14 +6,16 @@
 :root {
 
   /* ── Palette ─────────────────────────────────────────── */
-  --color-bg:                #FFFFFF;
-  --color-bg-soft:           #F4F5F7;   /* cool neutral surface */
-  --color-bg-tinted:         #EEF1F3;   /* very subtle cool tint — use sparingly */
-  --color-surface-dark:      #0A1628;   /* deep navy — dark sections */
+  --color-bg:                #FAF8F4;   /* warm off-white base */
+  --color-card:              #FFFFFF;   /* white card surface on off-white */
+  --color-bg-soft:           #F2EFE8;   /* warm neutral surface */
+  --color-bg-tinted:         #E8EEF2;   /* cool tint — use sparingly */
+  --color-surface-dark:      #1A1D1F;   /* charcoal — editorial sections */
+  --color-surface-navy:      #0A1628;   /* deep navy — institutional/credibility */
   --color-surface-darker:    #050C18;   /* near-black navy — footer */
-  --color-ink:               #0A1628;
-  --color-ink-muted:         #4A5568;
-  --color-ink-soft:          #8B95A3;
+  --color-ink:               #1A1D1F;
+  --color-ink-muted:         #5A6068;
+  --color-ink-soft:          #8B9099;
   --color-primary:           #0B3B5C;   /* deep navy */
   --color-primary-container: #D5DEE8;   /* muted blue-grey tint */
   --color-primary-hover:     #072842;
@@ -22,12 +24,13 @@
   --color-accent-container:  #F2DFDE;
   --color-success:           #1A6B3A;
   --color-success-bg:        #D4EDDA;
-  --color-rule:              rgba(10, 22, 40, 0.10);
-  --color-rule-strong:       rgba(10, 22, 40, 0.16);
+  --color-rule:              rgba(26, 29, 31, 0.10);
+  --color-rule-strong:       rgba(26, 29, 31, 0.16);
+  --color-rule-on-dark:      rgba(255, 255, 255, 0.10);
 
   /* Dark surface text hierarchy */
-  --color-on-dark:       #FFFFFF;
-  --color-on-dark-muted: #B8C2CF;
+  --color-on-dark:       #FAF8F4;
+  --color-on-dark-muted: #A8AEB6;
   --color-on-dark-soft:  #6B7A8F;
 
   /* Module card backgrounds — monochrome, Module 01 distinguished */
@@ -42,14 +45,14 @@
   --color-footer-text: var(--color-on-dark);
 
   /* ── Typography ──────────────────────────────────────── */
-  --font-display: 'Source Serif 4', Georgia, serif;
+  --font-display: 'Inter', system-ui, sans-serif;
   --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
   --font:         var(--font-sans);   /* backward-compat alias */
 
-  --text-display-lg:  3.25rem;   /* 52px — serif, weight 500 */
-  --text-display-md:  2.5rem;    /* 40px — serif, weight 500 */
-  --text-headline-lg: 1.75rem;   /* 28px — sans, weight 600 */
-  --text-headline-md: 1.375rem;  /* 22px — sans, weight 600 */
+  --text-display-lg:  3.5rem;    /* 56px — sans, weight 600 */
+  --text-display-md:  2.75rem;   /* 44px — sans, weight 600 */
+  --text-headline-lg: 2rem;      /* 32px — sans, weight 600 */
+  --text-headline-md: 1.5rem;    /* 24px — sans, weight 600 */
   --text-title:       1.125rem;  /* 18px — sans, weight 600 */
   --text-body-lg:     1.125rem;  /* 18px — sans, weight 400 (hero leads) */
   --text-body:        1rem;      /* 16px */
@@ -95,8 +98,8 @@
 
   /* ── Elevation ───────────────────────────────────────── */
   --elev-0: none;
-  --elev-1: 0 1px 3px rgba(10, 22, 40, 0.07), 0 1px 2px rgba(10, 22, 40, 0.04);
-  --elev-2: 0 4px 16px rgba(10, 22, 40, 0.10), 0 2px 4px rgba(10, 22, 40, 0.06);
+  --elev-1: 0 1px 3px rgba(26, 29, 31, 0.07), 0 1px 2px rgba(26, 29, 31, 0.04);
+  --elev-2: 0 4px 16px rgba(26, 29, 31, 0.10), 0 2px 4px rgba(26, 29, 31, 0.06);
 
   /* ── Motion ──────────────────────────────────────────── */
   --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);

@@ -2,7 +2,7 @@
    base.css — Reset, typography defaults, layout primitives
    ============================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* ── Reset ──────────────────────────────────────────────── */
 
@@ -50,37 +50,36 @@ p { max-width: 65ch; }
 
 /* ── Typography utilities ───────────────────────────────── */
 
-/* Display sizes use Source Serif 4 */
+/* Display sizes — Inter heavy weight */
 .text-display-lg {
   font-family: var(--font-display);
   font-size: var(--text-display-lg);
-  line-height: 1.154;          /* 60/52 */
-  letter-spacing: -0.015em;
-  font-weight: 500;
+  line-height: 1.143;          /* 64/56 */
+  letter-spacing: -0.025em;
+  font-weight: 600;
 }
 
 .text-display-md {
   font-family: var(--font-display);
   font-size: var(--text-display-md);
-  line-height: 1.2;            /* 48/40 */
-  letter-spacing: -0.01em;
-  font-weight: 500;
+  line-height: 1.182;          /* 52/44 */
+  letter-spacing: -0.02em;
+  font-weight: 600;
 }
 
-/* Headline and below use Inter */
 .text-headline-lg {
   font-family: var(--font-sans);
   font-size: var(--text-headline-lg);
-  line-height: 1.286;          /* 36/28 */
-  letter-spacing: -0.005em;
+  line-height: 1.25;           /* 40/32 */
+  letter-spacing: -0.015em;
   font-weight: 600;
 }
 
 .text-headline-md {
   font-family: var(--font-sans);
   font-size: var(--text-headline-md);
-  line-height: 1.364;          /* 30/22 */
-  letter-spacing: 0;
+  line-height: 1.333;          /* 32/24 */
+  letter-spacing: -0.01em;
   font-weight: 600;
 }
 
@@ -88,6 +87,7 @@ p { max-width: 65ch; }
   font-family: var(--font-sans);
   font-size: var(--text-title);
   line-height: 1.444;          /* 26/18 */
+  letter-spacing: -0.005em;
   font-weight: 600;
 }
 
@@ -169,28 +169,42 @@ p { max-width: 65ch; }
   background-color: var(--color-bg-tinted);
 }
 
+.section--navy {
+  background-color: var(--color-surface-navy);
+  color: var(--color-on-dark);
+}
+
 /* Dark section text hierarchy */
 .section--dark h1,
 .section--dark h2,
 .section--dark h3,
-.section--dark h4 {
+.section--dark h4,
+.section--navy h1,
+.section--navy h2,
+.section--navy h3,
+.section--navy h4 {
   color: var(--color-on-dark);
 }
 
 .section--dark p,
-.section--dark .lead {
+.section--dark .lead,
+.section--navy p,
+.section--navy .lead {
   color: var(--color-on-dark-muted);
 }
 
-.section--dark .text-muted {
+.section--dark .text-muted,
+.section--navy .text-muted {
   color: var(--color-on-dark-muted);
 }
 
-.section--dark .text-soft {
+.section--dark .text-soft,
+.section--navy .text-soft {
   color: var(--color-on-dark-soft);
 }
 
-.section--dark .overline {
+.section--dark .overline,
+.section--navy .overline {
   color: var(--color-primary-container);
 }
 
@@ -273,14 +287,15 @@ p { max-width: 65ch; }
   }
   .text-display-lg {
     font-size: 2.5rem;       /* 40px */
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
   .text-display-md {
     font-size: 1.875rem;     /* 30px */
-    letter-spacing: -0.008em;
+    letter-spacing: -0.015em;
   }
   .text-headline-lg {
     font-size: 1.5rem;       /* 24px */
+    letter-spacing: -0.01em;
   }
 }
 
