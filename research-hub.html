@@ -35,19 +35,23 @@
 
   <!-- ── Hero ──────────────────────────────────────────── -->
   <section class="hero hero--sm" aria-labelledby="hero-heading">
-    <div class="container hero-grid">
+    <div class="container grid hero-grid">
 
-      <div class="hero-left">
+      <div class="hero-left col-3">
         <span class="hero-overline">USW Research Hub</span>
-        <h1 id="hero-heading" class="text-display-md">
+        <h1 id="hero-heading" class="text-display-lg">
           Where researchers, educators, and practitioners connect.
         </h1>
         <p class="hero-lead">
           The Research Hub is the community face of Uni Student Wellbeing. It hosts events and shares news that keeps practitioners and researchers in conversation with each other.
         </p>
+        <div class="hero-actions">
+          <a href="#events-heading" class="btn btn-primary btn--lg">See upcoming events</a>
+          <a href="#news-heading" class="btn btn-outlined btn--lg">Latest news</a>
+        </div>
       </div>
 
-      <div class="hero-right" aria-hidden="true">
+      <div class="hero-right col-3" aria-hidden="true">
         <div class="hero-event-card">
           <span class="hero-event-label">Next event</span>
           <div class="hero-event-date-row">
@@ -68,6 +72,7 @@
             <a href="#" class="btn btn-primary btn--sm">Register now</a>
           </div>
         </div>
+        <p style="margin-top: 16px; font-size: var(--text-meta); color: var(--color-ink-soft); text-align: right;">5 events upcoming</p>
       </div>
 
     </div>
@@ -189,7 +194,7 @@
   <section class="section section--sm section--soft" aria-labelledby="past-heading">
     <div class="container">
       <header class="section-header" style="margin-bottom: var(--space-5);">
-        <h2 id="past-heading" class="text-headline-md">Past events</h2>
+        <h2 id="past-heading" class="text-display-md">Past events</h2>
       </header>
 
       <div class="past-events-list" role="list">

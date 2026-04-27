@@ -392,11 +392,20 @@ a.card:hover,
 }
 
 .section-header h2 {
-  font-size: var(--text-headline-lg);
-  line-height: 1.25;
-  letter-spacing: -0.01em;
+  font-family: var(--font-display);
+  font-size: var(--text-display-md);   /* 44px */
+  line-height: 1.182;
+  letter-spacing: -0.02em;
   font-weight: 600;
-  margin-bottom: 16px;            /* heading → lead */
+  margin-bottom: 16px;                  /* heading → lead */
+  text-wrap: balance;
+}
+
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 1.875rem;                /* 30px on mobile */
+    letter-spacing: -0.015em;
+  }
 }
 
 .section-header .overline {
@@ -425,8 +434,8 @@ a.card:hover,
 }
 
 .hero-grid {
-  gap: var(--space-12);
-  align-items: center;
+  gap: var(--grid-gutter);
+  align-items: start;
 }
 
 .hero-left {}
